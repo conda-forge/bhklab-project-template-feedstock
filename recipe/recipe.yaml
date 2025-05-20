@@ -1,5 +1,5 @@
 context:
-    version: 0.7.0
+    version: 0.8.0
     python_min: 3.12
 
 package:
@@ -7,8 +7,8 @@ package:
     version: ${{ version }}
 
 source:
-    - url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-      sha256: 22f6fa0ee17f21b9104d905215b3135d4a38a6d840a207b7998d3ac46666c25c
+    url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
+    sha256: d3a4cb6e9e4bf4e137fc3292aacb9131fd251b118b7262932af8846156e49221
 
 build:
     script: ${{ PYTHON }} -m pip install .
