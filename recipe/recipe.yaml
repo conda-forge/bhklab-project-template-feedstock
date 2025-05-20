@@ -1,5 +1,5 @@
 context:
-    version: 0.8.0
+    version: 0.9.0
     python_min: 3.12
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
     url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-    sha256: d3a4cb6e9e4bf4e137fc3292aacb9131fd251b118b7262932af8846156e49221
+    sha256: 83f1228babd788b94bb879d02dd4290327b433d8c9532f128cd124784f3697a5
 
 build:
     script: ${{ PYTHON }} -m pip install .
