@@ -7,8 +7,8 @@ package:
     version: ${{ version }}
 
 source:
-    - url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-      sha256: d3a4cb6e9e4bf4e137fc3292aacb9131fd251b118b7262932af8846156e49221
+    url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
+    sha256: d3a4cb6e9e4bf4e137fc3292aacb9131fd251b118b7262932af8846156e49221
 
 build:
     script: ${{ PYTHON }} -m pip install .
