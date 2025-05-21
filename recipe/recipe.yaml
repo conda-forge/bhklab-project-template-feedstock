@@ -1,47 +1,47 @@
 context:
-    version: 0.9.0
-    python_min: 3.12
+  version: "0.10.0"
+  python_min: '3.12'
 
 package:
-    name: bhklab-project-template
-    version: ${{ version }}
+  name: bhklab-project-template
+  version: ${{ version }}
 
 source:
-    url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-    sha256: 83f1228babd788b94bb879d02dd4290327b433d8c9532f128cd124784f3697a5
+  url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
+  sha256: 3c731cf3f62ad97799283e13b492216b46133e714c6969e001a588beb66970ec
 
 build:
-    script: ${{ PYTHON }} -m pip install .
-    python:
-        entry_points:
-            - bhklab-project-template = bhklab_project_template.__init__:cli
-    noarch: python
-    number: 0
+  script: ${{ PYTHON }} -m pip install .
+  python:
+    entry_points:
+      - bhklab-project-template = bhklab_project_template.__init__:cli
+  noarch: python
+  number: 0
 
 requirements:
-    host:
-        - python ${{ python_min }}.*
-        - hatchling
-        - pip
-    run:
-        - python >=${{ python_min }}
-        - click <9,>=8.2.0
-        - copier <10,>=9.7.1
-        - "rich-click "
-        - rich <15,>=14.0.0
+  host:
+    - python ${{ python_min }}.*
+    - hatchling
+    - pip
+  run:
+    - python >=${{ python_min }}
+    - click <9,>=8.2.0
+    - copier <10,>=9.7.1
+    - "rich-click "
+    - rich <15,>=14.0.0
 
 tests:
-    - python:
-          python_version: ${{ python_min }}.*
-          imports:
-              - bhklab_project_template
-          pip_check: true
+  - python:
+      python_version: ${{ python_min }}.*
+      imports:
+        - bhklab_project_template
+      pip_check: true
 
 about:
-    summary: A simple CLI tool to create new BHKLab projects from a template
-    license: MIT
-    license_file: LICENSE.md
-    homepage: https://github.com/bhklab/bhklab-project-template
+  summary: A simple CLI tool to create new BHKLab projects from a template
+  license: MIT
+  license_file: LICENSE.md
+  homepage: https://github.com/bhklab/bhklab-project-template
 extra:
-    recipe-maintainers:
-        - jjjermiah
+  recipe-maintainers:
+    - jjjermiah
