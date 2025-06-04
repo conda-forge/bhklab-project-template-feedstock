@@ -29,6 +29,8 @@ requirements:
     - copier <10,>=9.7.1
     - "rich-click "
     - rich <15,>=14.0.0
+    - loguru <1,>=0.7.0
+    - platformdirs <5,>=4.3.8
 
 tests:
   - python:
