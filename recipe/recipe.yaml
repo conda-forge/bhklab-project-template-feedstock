@@ -1,5 +1,5 @@
 context:
-  version: "0.10.0"
+  version: "0.11.0"
   python_min: '3.12'
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-  sha256: 3c731cf3f62ad97799283e13b492216b46133e714c6969e001a588beb66970ec
+  sha256: 37160865bea9a179c709041f2963ca8cd1204d43a64b9d63bb6e64f5ff3163d7
 
 build:
   script: ${{ PYTHON }} -m pip install .
@@ -29,6 +29,8 @@ requirements:
     - copier <10,>=9.7.1
     - "rich-click "
     - rich <15,>=14.0.0
+    - loguru <1,>=0.7.0
+    - platformdirs <5,>=4.3.8
 
 tests:
   - python:
