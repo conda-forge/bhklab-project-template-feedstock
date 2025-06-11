@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-  sha256: e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855
+  sha256: 51e9b0d716961aa6f957630a591517fecfd9f5341c74530b4e0ce0f3bc33cfee
 
 build:
   script: ${{ PYTHON }} -m pip install .
