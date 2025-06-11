@@ -1,14 +1,17 @@
 context:
-  version: "0.11.0"
+  version: "0.13.0"
   python_min: '3.12'
 
 package:
   name: bhklab-project-template
   version: ${{ version }}
 
+# if you want to find the sha:
+# curl -sL https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-0.13.0.tar.gz | shasum -a 256
+
 source:
   url: https://pypi.org/packages/source/b/bhklab-project-template/bhklab_project_template-${{ version }}.tar.gz
-  sha256: 37160865bea9a179c709041f2963ca8cd1204d43a64b9d63bb6e64f5ff3163d7
+  sha256: 4e0dd98b885fe832eafc8733d1a2a0cf282c716ffed697ed05033c0c27795767
 
 build:
   script: ${{ PYTHON }} -m pip install .
