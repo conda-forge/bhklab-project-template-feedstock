@@ -144,4 +144,6 @@ Feedstock Maintainers
 =====================
 
 * [@jjjermiah](https://github.com/jjjermiah/)
+* [@mattbocc](https://github.com/mattbocc/)
+* [@strixy16](https://github.com/strixy16/)
 
